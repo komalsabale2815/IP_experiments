@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Home Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- External stylesheet -->
+    <script src="script.js" defer></script> <!-- Link to script.js -->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="banner" style="background-image: url('banner.jpg'); color: white;">
+        <h1>Welcome to ShopEasy</h1>
+        <p>Your one-stop shop for all things amazing!</p>
+    </header>
+    <section id="featured-products">
+        <article class="product" data-category="electronics">
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F9d%2F28%2F9d28c8edf36908af388aeab18cc9e0110923ba75.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bkids_boys_clothing_tshirtsshirts_shirts_linen%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]" alt="Shirt">
+            <h2>Shirts</h2>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </article>
+        <article class="product" data-category="fashion">
+            <img src="https://nobero.com/cdn/shop/files/the-place.jpg?v=1709125918" alt="T-Shirt">
+            <h2>Graphic T-Shirt</h2>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </article>
+        <article class="product" data-category="fashion">
+            <img src="https://nobero.com/cdn/shop/files/WhatsApp_Image_2024-06-25_at_4.31.53_PM_1.jpg?v=1719314841" alt="Oversized T-Shirt">
+            <h2>Oversized T-Shirts</h2>
+            <p>$25.99</p>
+            <button>Add to Cart</button>
+        </article>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order-form">
+        <h2>Order Your T-Shirt</h2>
+        <form id="tshirt-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" required>
+            
+            <label for="message">Message on T-Shirt:</label>
+            <textarea id="message" name="message" maxlength="100" required></textarea>
+            
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <!-- Receipt Section -->
+    <section id="receipt"></section>
+
+    <footer>
+        <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
