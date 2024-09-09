@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infotech and Co.</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        #logo {
+            max-width: 150px;
+            margin: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .dropdown {
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .dropdown-button {
+            background: #6c91a9;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .dropdown-button:hover {
+            background: #2980b9;
+        }
+        .dropdown-content {
+            display: none;
+            background: #f9f9f9;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            border-radius: 0 0 5px 5px;
+        }
+        .dropdown-content p {
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: #ecf0f1;
+            position: relative;
+        }
+        footer table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        footer table th, footer table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        footer table th {
+            background: #34495e;
+        }
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: opacity 0.3s;
+        }
+        .social-icons img:hover {
+            opacity: 0.7;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                text-align: center;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            footer table {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Infotech and Co.</h1>
+        <img src="logo.png" alt="Company Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#promotional-video">An Intro to Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a leading company in providing exceptional services to our clients. Our team is committed to delivering outstanding results and ensuring client satisfaction.</p>
+        <img src="company1.png" alt="Company Overview" class="responsive-img">
+        <img src="company2.png" alt="Company Overview" class="responsive-img">
+        <img src="company3.png" alt="Company Overview" class="responsive-img">
+
+
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="dropdown">
+            <button class="dropdown-button">Service One: AI Solutions</button>
+            <div class="dropdown-content">
+                <p>Our AI Solutions include machine learning models, natural language processing, and custom AI development to optimize your business processes and improve decision-making.</p>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-button">Service Two: Cloud Computing</button>
+            <div class="dropdown-content">
+                <p>We provide scalable and secure cloud computing solutions, including cloud migration, infrastructure as a service (IaaS), and cloud-based application development to ensure business continuity.</p>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-button">Service Three: Cybersecurity</button>
+            <div class="dropdown-content">
+                <p>Our cybersecurity services offer comprehensive protection against digital threats, including vulnerability assessments, intrusion detection, and incident response to safeguard your data and systems.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="promotional-video">
+        <h2>Introduction</h2>
+        <video controls>
+            <source src="promo.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <br><br>
+        <audio controls>
+            <source src="introduction.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <table>
+            <tr>
+                <th>Address</th>
+                <td>123 Company St, Hyd, India.</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><a href="mailto:info@infotech.com">info@infotech.com</a></td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td><a href="tel:+1234567890">(123) 456-7890</a></td>
+            </tr>
+        </table>
+        <div class="social-icons">
+            <a href="https://facebook.com/company" target="_blank" rel="noopener noreferrer">
+                <img src="facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/company" target="_blank" rel="noopener noreferrer">
+                <img src="twitter.png" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com/company" target="_blank" rel="noopener noreferrer">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Infotech and Co. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.dropdown-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const dropdownContent = button.nextElementSibling;
+                const isOpen = dropdownContent.style.display === 'block';
+                document.querySelectorAll('.dropdown-content').forEach(content => content.style.display = 'none');
+                dropdownContent.style.display = isOpen ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
