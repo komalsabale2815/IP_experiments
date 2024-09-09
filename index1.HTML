@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Home Page</title>
+    <style>
+        /* Universal styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #343a40;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #495057;
+        }
+
+        /* Banner styles */
+        .banner {
+            background-color: #98c4f0;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background-image: url('banner.jpg');
+            background-size: cover;
+        }
+
+        /* Featured Products styles */
+        #featured-products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        #featured-products img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product h2 {
+            font-size: 1.2em;
+        }
+        .product p {
+            font-size: 1em;
+            color: #333;
+        }
+        .product button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product button:focus {
+            outline: none;
+        }
+        .product button:active {
+            background-color: #218838;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="banner">
+        <h1>Welcome to ShopEasy</h1>
+        <p>Your one-stop shop for all things amazing!</p>
+    </header>
+    <section id="featured-products">
+        <article class="product" data-category="electronics">
+            <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F9d%2F28%2F9d28c8edf36908af388aeab18cc9e0110923ba75.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bkids_boys_clothing_tshirtsshirts_shirts_linen%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]" alt="Shirt">
+            <h2>Shirts</h2>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </article>
+        <article class="product" data-category="fashion">
+            <img src="https://nobero.com/cdn/shop/files/the-place.jpg?v=1709125918" alt="T-Shirt">
+            <h2>Graphic T-Shirt</h2>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </article>
+        <article class="product" data-category="home">
+            <img src="https://nobero.com/cdn/shop/files/WhatsApp_Image_2024-06-25_at_4.31.53_PM_1.jpg?v=1719314841" alt="Oversized T-Shirts">
+            <h2>Oversized T-Shirts</h2>
+            <p>$8.99</p>
+            <button>Add to Cart</button>
+        </article>
+    </section>
+    <footer>
+        <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
